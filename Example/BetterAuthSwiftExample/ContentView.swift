@@ -33,7 +33,7 @@ enum Screen: String, Hashable, Identifiable, CaseIterable {
   case magicLink
   case emailOTP
   case passkeyView
-  case genericOAuthView
+  case GenericOAuthView
 
   var id: String { rawValue }
 
@@ -53,7 +53,7 @@ enum Screen: String, Hashable, Identifiable, CaseIterable {
       "Email OTP"
     case .passkeyView:
       "Passkey"
-    case .genericOAuthView:
+    case .GenericOAuthView:
       "Generic OAuth"
     }
   }
@@ -140,7 +140,7 @@ struct ContentView: View {
       EmailOTPView()
     case .passkeyView:
       PasskeyView()
-    case .genericOAuthView:
+    case .GenericOAuthView:
       GenericOAuthView()
     }
   }
